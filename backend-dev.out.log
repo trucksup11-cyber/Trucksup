@@ -1,0 +1,16 @@
+
+> dev:backend
+> npm --prefix backend run dev
+
+
+> backend@1.0.0 dev
+> nodemon --exec "node --no-warnings=ExperimentalWarning" server.js
+
+[33m[nodemon] 3.1.14[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node --no-warnings=ExperimentalWarning server.js`[39m
+[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+Trucks Up backend running on port 5000
+SQLite database ready at C:\Users\Ritik\Trucks-up\backend\data\trucks-up.sqlite

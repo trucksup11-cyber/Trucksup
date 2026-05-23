@@ -1,0 +1,12 @@
+{
+  "name": "trucks-up-workspace",
+  "private": true,
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "start:backend": "npm --prefix backend start",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "build": "npm run build:frontend",
+    "start": "npm run start:backend"
+  }
+}

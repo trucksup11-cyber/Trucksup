@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: trucks-up-backend
+    env: node
+    plan: free
+    buildCommand: npm ci --prefix backend
+    startCommand: npm --prefix backend start
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CORS_ORIGINS
+        value: https://your-cloudflare-pages-domain.pages.dev
+      - key: ADMIN_EMAIL
+        value: admin@trucksup.local
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: DRIVER_EMAIL
+        value: driver@trucksup.local
+      - key: DRIVER_PASSWORD
+        sync: false
